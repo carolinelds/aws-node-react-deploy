@@ -8,7 +8,7 @@ services:
     env_file:
       - ./back-end/.env.test
 
-  node_app:
+  node_students_app:
     container_name: node_students_app
     build: ./back-end/.env.test
     ports:
