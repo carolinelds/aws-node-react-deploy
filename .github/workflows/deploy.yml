@@ -35,8 +35,8 @@ jobs:
         run: docker-compose down
 
       - name: Clean docker volumes from previous runs
-        run: [[ $(docker volume ls -q | grep -c aws*) -ne 0 ]] && docker volume rm $(docker volume ls -q) || echo "No volume to remove."
-        
+        run: docker volume rm $(docker volume ls -q)
+
       - name: Clean docker system from previous runs
         run: docker system prune -af
 
