@@ -33,10 +33,7 @@ jobs:
 
       - name: Compose down from previous runs
         run: docker-compose down
-
-      - name: Clean docker system from previous runs
-        run: docker system prune -af
-
+        
       - name: Build
         run: docker-compose build
 
