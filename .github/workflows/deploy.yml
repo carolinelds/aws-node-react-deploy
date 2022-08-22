@@ -34,9 +34,6 @@ jobs:
       - name: Compose down from previous runs
         run: docker-compose down
 
-      - name: Clean docker volumes from previous runs
-        run: docker volume rm $(docker volume ls -q)
-
       - name: Clean docker system from previous runs
         run: docker system prune -af
 
