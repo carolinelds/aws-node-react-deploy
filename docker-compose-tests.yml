@@ -9,7 +9,7 @@ services:
       - ./back-end/.env.test
 
   node_app:
-    container_name: node_app
+    container_name: node_students_app
     build: ./back-end/.env.test
     ports:
       - 5000:5000
