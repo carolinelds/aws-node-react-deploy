@@ -10,7 +10,7 @@ services:
 
   node_students_app:
     container_name: node_students_app
-    build: ./back-end/.env.test
+    build: ./back-end/
     ports:
       - 5000:5000
     depends_on:
